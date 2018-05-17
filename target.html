@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>目标检索</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/common.css">
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<!--header开始-->
+		<div class="header">
+			<div class="header_logo fl">
+				<a href="#"><img src="image/logo.png" alt=""></a>
+			</div>
+
+			<div class="header_myself fr">
+				<ul>
+					<li class="user">
+						<a href=""><img src="image/user.jpg" alt="" id="userImage">admin</a>
+					</li>
+					<li class="set">
+						<b></b>
+						<a href="">个人设置</a>
+					</li>
+					<li class="quit">
+						<b></b>
+						<a href="login.html">退出</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<!--header结束-->
+
+		<!--content开始-->
+		<div class="data_content">
+
+			<div class="data_main clearfix">
+				<div class="main_left_one fl">
+					<div class="left_1">
+						<ul class="tabs">
+							<a href="index.html">
+								<li>主页</li>
+							</a>
+							<a href="behavior.html">
+								<li>行为分析</li>
+							</a>
+							<a href="target.html">
+								<li class="selected">目标检索</li>
+							</a>
+							<a href="system.html">
+								<li>系统配置</li>
+							</a>
+						</ul>
+						
+
+					</div>
+
+				</div>
+				<div class="main_center_two fl">
+					<div class="center_text clearfix">
+						<div class="aui-content-img-box aui-content-full">
+							<div class="aui_photo clearfix">
+								<section class="aui_file_up aui-up-img fl">
+									<img src="image/upload.png" class="add-img">
+									<input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple="">
+								</section>
+							</div>
+						</div>
+						<section class="aui_file_txt clearfix">
+							<ul>
+								<li><label>时间：</label> <input type="text" id="filetime" name="filetime" class="input" autocomplete="off"></li>
+								<li><label>位置：</label> <input type="text" id="fileaddr" name="fileaddr" class="input" autocomplete="off"></li>
+								<li><label>摄像头ID：</label> <input type="text" id="fileid" name="fileid" class="input" autocomplete="off"></li>
+							</ul>
+						</section>
+						<div class="aui_btn_default">
+							<button class="aui_btn submit">提交</button>
+						</div>
+						<i class="i1"></i>
+						<i class="i2"></i>
+						<i class="i3"></i>
+						<i class="i4"></i>
+					</div>
+					<!-- mask begin -->
+					<div class="aui-mask aui-works-mask">
+						<div class="aui-mask-content">
+							<p class="aui-delete-text">确定要删除你上传的图片？</p>
+							<p class="aui-check-text">
+								<span class="aui-delete aui-accept-ok">确定</span>
+								<span class="aui-accept-no">取消</span>
+							</p>
+						</div>
+					</div>
+					<!-- mask end -->
+					<div class="center_text_two"  style="padding-bottom: 10px;">
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+						<div class="target_imgs clearfix">
+							<div class="target_left">
+								<img src="image/service1.jpg">
+							</div>
+							<div class="target_right">
+								<p>时间：2018.5.4</p>
+								<p>位置：</p>
+								<p>摄像头ID:</p>
+							</div>
+						</div>
+
+						<i class="i1"></i>
+						<i class="i2"></i>
+						<i class="i3"></i>
+						<i class="i4"></i>
+					</div>
+				</div>
+
+			</div>
+
+			<!--content结束-->
+			<script src="js/bootstrap.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/upload.js"></script>
+
+		</div>
+
+	</body>
+
+</html>

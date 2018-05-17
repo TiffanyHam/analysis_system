@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>系统配置</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/common.css">
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			#snap {
+				display: block;
+				margin: 0 auto;
+				width: 80%;
+				height: 2em;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--header开始-->
+		<div class="header">
+			<div class="header_logo fl">
+				<a href="#"><img src="image/logo.png" alt=""></a>
+			</div>
+
+			<div class="header_myself fr">
+				<ul>
+					<li class="user">
+						<a href=""><img src="image/user.jpg" alt="" id="userImage">admin</a>
+					</li>
+					<li class="set">
+						<b></b>
+						<a href="">个人设置</a>
+					</li>
+					<li class="quit">
+						<b></b>
+						<a href="login.html">退出</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<!--header结束-->
+
+		<!--content开始-->
+		<div class="data_content">
+
+			<div class="data_main clearfix">
+				<div class="main_left_one fl">
+					<div class="left_1">
+						<ul class="tabs">
+							<a href="index.html">
+								<li>主页</li>
+							</a>
+							<a href="behavior.html">
+								<li>行为分析</li>
+							</a>
+							<a href="target.html">
+								<li>目标检索</li>
+							</a>
+							<a href="system.html">
+								<li class="selected">系统配置</li>
+							</a>
+						</ul>
+
+					</div>
+
+				</div>
+				<div class="main_center_two fl">
+					<div class="line">
+						<span>摄像头节点设置</span>
+					</div>
+					<div class="center_text clearfix">
+
+						<section class="photo_txt clearfix">
+							<ul>
+								<li><label>设备名称：</label> <input type="text" id="filename" name="filename" class="input" autocomplete="off"></li>
+								<li><label>设备ip：</label> <input type="text" id="fileip" name="fileip" class="input" autocomplete="off"></li>
+								<li><label>端口号：</label> <input type="text" id="filecode" name="filecode" class="input" autocomplete="off"></li>
+								<li><label>注册模式：</label>
+									<select>
+										<option value="">普通ip</option>
+										<option value="">特殊ip</option>
+									</select>
+								</li>
+								<li><label>所在区域：</label> <input type="text" id="filearea" name="filearea" class="input" autocomplete="off"></li>
+								<li><label>DNS地址：</label> <input type="text" id="fileposition" name="fileposition" class="input" autocomplete="off"></li>
+
+							</ul>
+							<p><button class="aui_btn confirm">确定</button></p>
+						</section>
+
+						<i class="i1"></i>
+						<i class="i2"></i>
+						<i class="i3"></i>
+						<i class="i4"></i>
+					</div>
+
+					<div class="center_text_two">
+						<table border="0" cellspacing="0" cellpadding="0" class="behavior_table">
+							<thead>
+								<tr style="background: #212e6b;">
+									<th width="15%">时间</th>
+									<th width="15%">事件类型</th>
+									<th width="15%">正常/异常</th>
+									<th width="20%">摄像头ID</th>
+									<th width="15%">等级</th>
+									<th width="20%">目标种类</th>
+								</tr>
+							</thead>
+						</table>
+						<div class="table_body">
+							<table border="0" cellspacing="0" cellpadding="0" class="behavior_table" id="system_table_two">
+								<tbody></tbody>
+							</table>
+
+							<div id="page" class="page">
+								<span class="current prev">上一页</span>
+								<span class="current">1</span>
+								<span class="current next">下一页</span>
+							</div>
+
+						</div>
+						<i class="i1"></i>
+						<i class="i2"></i>
+						<i class="i3"></i>
+						<i class="i4"></i>
+					</div>
+				</div>
+
+			</div>
+
+			<!--content结束-->
+			<script src="js/common.js"></script>
+
+		</div>
+
+	</body>
+
+</html>

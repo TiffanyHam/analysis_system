@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>登录</title>
+		<link title="orange" href="css/login.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap.css" title="" rel="stylesheet">
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/video-js.min.css" rel="stylesheet">
+		<!-- If you'd like to support IE8 -->
+		<script src="js/videojs-ie8.min.js"></script>
+
+		<body>
+			<div style="height:1px;"></div>
+			<div class="login">
+				<header>
+					<h1>登录</h1>
+				</header>
+				<div class="sr">
+					<form>
+						<div class="name">
+							<label>
+				<i class="sublist-icon glyphicon glyphicon-user"></i>
+				</label>
+							<input placeholder="用户名" class="name_inp" type="text">
+						</div>
+						<div class="name">
+							<label>
+				<i class="sublist-icon glyphicon glyphicon-lock"></i>
+				</label>
+							<input placeholder="密码" class="name_inp" type="text">
+						</div>
+						<div class="log_on">立即登录</div>
+					</form>
+				</div>
+			</div>
+
+		</body>
+		<script type="text/javascript">
+			$('.log_on').bind('click', function() {
+				self.location.href = "index.html";
+			})
+		</script>
+
+</html>
